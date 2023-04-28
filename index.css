@@ -173,9 +173,10 @@
     display: inline-flex;
     flex-wrap: wrap;
     }
-    .logo {
-    display: flex;
-    width: 120px;
+    .logo2{
+    position: relative;
+    top: 100px;
+    left: 100px;
   }
   .footer{
     display: flex;
