@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+hr {
+  height: 4px;
+  background-color: #070a52;
+}
+
 /* header section  */
 .header {
   display: flex;
