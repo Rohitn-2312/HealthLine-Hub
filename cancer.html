@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <title>Cancer</title>
-</head>
-<style>
-    .start{
-        background-color: #E9E8E8;
-    }
-.cancer{
-    height: 100px;
-    width: 1000px;
-    /* background-color: aqua; */
-    /* text-align: center; */
-    /* color: aliceblue; */
-    line-height: 75px;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.CANCER{
-    
-   margin-left: 50px; 
-    
-}
-.naman{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    margin-bottom: 50px;
-    margin-left: 300px;
-    width: 800px;
-    background-color: aliceblue;
-}
-</style>
-<body>
-    <div class="start">
-    <div class="cancer">
-        CANCER
-    </div>
-    <div class="naman">
-        <div class="CANCER"><img src="data:image/jpeg;base64,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"/></h2></div>
-        <div class="CANCER"><h2>Prostate cancer:Symptoms tests and treatment</h2>
-        <!-- </br> -->
-        <!-- </br> -->
-        <h4>Cancer in the prostate is common in older men but can be cured completely if diagnosed early</h4>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cancer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Types Of Cancer</h1>
+    </header>
+    <main>
+      <section class="grid-1">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="img"
+        />
+        <div class="info-1">
+          <h2>
+            <a
+              href="https://www.cancer.org/cancer/prostate-cancer.html"
+              target="_blank"
+              >Prostate cancer
+            </a>
+          </h2>
+          <p>
+            Prostate cancer is the most common cancer among men (after skin
+            cancer), but it can often be treated successfully. If you have
+            prostate cancer or are close to someone who does, knowing what to
+            expect can help you cope. Here you can find out all about prostate
+            cancer, including risk factors, symptoms, how it is found, and how
+            it is treated.
+          </p>
         </div>
-
-    </div>
-    <div class="naman">
-        <div class=" CANCER"><img src="https://www.happiesthealth.com/wp-content/uploads/2023/04/Hugh-Jackman-Banner-1320x435.jpg" style="height:200px;width: 225px;"/></div>
-        <div class="CANCER"><h2>How sun-damaged skin leads to basal cell carcinoma</h2>
-        
-        <h4>Cancer in the prostate is common in older men but can be cured completely if diagnosed early</h4>
+      </section>
+      <section class="grid-2">
+        <div class="info-2">
+          <h2>
+            <a
+              href="https://www.cancer.org/cancer/basal-and-squamous-cell-skin-cancer.html"
+              target="_blank"
+              >Skin Cancer</a
+            >
+          </h2>
+          <p>
+            These cancers are most often found in areas exposed to the sun, such
+            as the head, neck, and arms, but they also can occur elsewhere. They
+            are very common but are also usually very treatable. Here you can
+            find out all about these cancers, including risk factors, symptoms,
+            how they are found, and how they are treated.
+          </p>
         </div>
-
-    </div>
-    <div class="naman">
-        <div class=" CANCER"><img src="https://www.happiesthealth.com/wp-content/uploads/2023/03/Researchers-develop-test-to-predict-recurrence-of-breast-cancer-Anantha-Banner-1320x435.jpg"style="height:200px;width: 225px;"/></div>
-        <div class="CANCER"><h2>Researchers develop test to predict breast cancer recurrence</h2>
-        <!-- </br> -->
-        <!-- </br> -->
-        <h4>he researchers have developed a low-cost and minimally invasive way to predict the possible recurrence of breast cancer</h4>
+        <img
+          src="https://www.happiesthealth.com/wp-content/uploads/2023/04/Hugh-Jackman-Banner-1320x435.jpg"
+          alt="img"
+        />
+      </section>
+      <section class="grid-3">
+        <img
+          src="https://www.happiesthealth.com/wp-content/uploads/2023/03/Researchers-develop-test-to-predict-recurrence-of-breast-cancer-Anantha-Banner-1320x435.jpg"
+        />
+        <div class="info-3">
+          <h2>
+            <a
+              href="https://www.cancer.org/cancer/breast-cancer/about.html"
+              target="_blank"
+              >breast cancer</a
+            >
+          </h2>
+          <p>
+            Whether you or a loved one are worried about developing breast
+            cancer, have just been diagnosed, are going through breast cancer
+            treatment, or are trying to stay well after treatment, this detailed
+            information can help you find the answers you need.
+          </p>
         </div>
-
-    </div>
-    <div class="naman">
-        <div class=" CANCER"><img src="https://www.happiesthealth.com/wp-content/uploads/2023/04/All-about-Liver-Cancer-Banner-002-2-1320x435.jpg"style="height:200px;width: 225px;"/></div>
-        <div class="CANCER"><h2>Liver cancer : An elusive variant pronr to recur</h2>
-        <!-- </br> -->
-        <!-- </br> -->
-        <h4>Cancer in the liver , caused due to chronic damage can be prevented by measures </h4>
+      </section>
+      <section class="grid-4">
+        <div class="info-4">
+          <h2>
+            <a
+              href="https://www.cancer.org/cancer/liver-cancer.html"
+              target="_blank"
+              >Liver cancer</a
+            >
+          </h2>
+          <p>
+            If you have liver cancer or are close to someone who does, knowing
+            what to expect can help you cope. Here you can find out all about
+            liver cancer, including risk factors, symptoms, how it is found, and
+            how it is treated.
+          </p>
         </div>
-
-    </div>
-    <div class="naman">
-        <div class=" CANCER"><img src="https://www.happiesthealth.com/wp-content/uploads/2023/03/Air-Pollution-Lung-Cancer-Story-Banner-002-1320x435.jpg"style="height:200px;width: 225px;"/></div>
-        <div class="CANCER"><h2>Lung cancer: When the cells turn rogue</h2>
-        <!-- </br> -->
-        <!-- </br> -->
-        <h4>Apart from smoking and tobacco use, occupational hazards, passive smoking and air pollution </h4>
+        <img
+          src="https://www.happiesthealth.com/wp-content/uploads/2023/04/All-about-Liver-Cancer-Banner-002-2-1320x435.jpg"
+        />
+      </section>
+      <section class="grid-5">
+        <img
+          src="https://www.happiesthealth.com/wp-content/uploads/2023/03/Air-Pollution-Lung-Cancer-Story-Banner-002-1320x435.jpg"
+        />
+        <div class="info-5">
+          <h2>
+            <a
+              href="https://www.cancer.org/cancer/lung-cancer/about/what-is.html"
+              target="_blank"
+              >Lung cancer</a
+            >
+          </h2>
+          <p>
+            There are different types of lung cancer. Knowing which type you
+            have is important because it affects your treatment options and your
+            outlook (prognosis). If you aren’t sure which type of lung cancer
+            you have, ask your doctor so you can get the right information.
+          </p>
         </div>
-
-    </div>
-    </div>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
