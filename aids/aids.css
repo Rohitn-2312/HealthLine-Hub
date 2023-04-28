@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header section  */
+header {
+  padding: 14px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6ba6f;
+}
+
+header h1 {
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0 20px;
+  color: #f97b22;
+}
+
+hr {
+  height: 2px;
+  margin: auto;
+  background-color: gray;
+  align-self: stretch;
+}
+
+img {
+  width: 90%;
+}
+
+.index {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px #f97b22;
+  background-color: #fff;
+}
+.index-links li {
+  list-style: none;
+  padding: 4px;
+}
+
+.index-heading {
+  color: #fc4f00;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.index-links li a {
+  text-decoration: none;
+  color: #ff6d60;
+}
+
+.index-links li a:hover {
+  text-decoration: underline;
+}
+
+/* main section */
+
+.grid-container {
+  width: 94%;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 55px;
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: 0 0 8px 4px gray;
+  border-radius: 10px;
+}
+
+.aids-info {
+  width: 94%;
+  margin: 24px auto;
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: 0 0 8px 4px gray;
+  border-radius: 10px;
+}
