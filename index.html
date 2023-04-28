@@ -52,7 +52,7 @@
 
     </div>
     <div class="block-1">
-     <h1>Sudden Deaths Claimed 5 lives/hour in 2020</h1>
+     <h1 class="sudden-death">Sudden Deaths Claimed 5 lives/hour in 2020</h1>
     <div class="report-1">
         <img class="map" src="bangalore map.png" alt="map">
         <h2>Unexpected,instant death-- something that occurs within minutes from any cause other than violence-has claimed at least four people under the age of 18 every day in 2020, while a total of nearly 50,000 across all age group died of such cases, at an average of 5 deaths an hour</h2>
@@ -93,16 +93,31 @@
         display: flex;
         align-items: center;
     }
-    .map{
-        width: 200px;
-        display: flex;
-        flex-basis: 200px;
+    .map{ 
+       width: 100%;
+       max-width: 200px;
+       height: auto;
     }
     .block-1{
       background-color: rgb(161, 228, 245);
       display: flex;
       flex-wrap: wrap;
-      height: 300px;
+      position: relative;
+      top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+
+    }
+    @media screen and (min-width: 494px) {
+    .sudden-death{
+      font-size: 50px;
+    }
+}
+
+    @media screen and (max-width: 845px) {
+      .sudden-death{
+        font-size: 40px;
+      }
     }
     
 </style>
