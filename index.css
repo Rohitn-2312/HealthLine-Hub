@@ -162,6 +162,40 @@
     position: relative;
     left: 310px;
   }
+  .hr{
+    position: relative;
+    top: 100px;
+    background: black;
+    height: 5px;
+    -webkit-filter: blur(1px);
+    }
+    .ending{
+    display: inline-flex;
+    flex-wrap: wrap;
+    }
+    .logo {
+    display: flex;
+    width: 120px;
+  }
+  .footer{
+    display: flex;
+    position: relative;
+    top: 200px;
+   }
+   .end-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+    top: 20px;
+  }
+  .disclaimer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 20px;
+  }
   @media screen and (min-width: 494px) {
     .sudden-death {
       font-size: 50px;
